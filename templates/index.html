@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Flask Fang</title>
+        <link rel=stylesheet type=text/css href='{{ url_for('static',filename='style.css')}}'>
+<div class=page>
+    <h1>User Input</h1>
+    <div class=metanav>
+
+        <h4>
+            Please enter a stock ticker eg. AAPL, and check desired features.
+        </h4>
+
+        <form id='index' method='post' action='index' >
+            <p>
+            Ticker symbol: <input type='text' name='ticker' /> <br />
+            </p>
+            <p>
+        Closing price <input type='checkbox' name='if_clo' value='true'/> <br />
+        Adjusted closing price <input type='checkbox' name='if_adj' value='true'/> <br />
+        Volume <input type='checkbox' name='if_vol' value='true'/> <br />     
+        <input type='submit' value='Submit' />
+</p>
+        </form>
+
+    </div>
+</div>
+</html>
+
+
+
+
+
+
+
+
+
+
